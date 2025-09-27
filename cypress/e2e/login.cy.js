@@ -22,4 +22,13 @@ describe('Page login', () => {
 
     cy.url().should('include', '/home');
   });
+
+  it('logout', function () {
+    cy.get('[data-testid="email"]').type(this.usuarios.admin.email);
+    cy.get('[data-testid="senha"]').type(this.usuarios.admin.password);
+
+    cy.get('[data-testid="entrar"]').click();
+    cy.get('[data-testid="logout"]').click();
+    cy.url().should('include', '/login');
+  });
 });
