@@ -15,7 +15,18 @@ Este projeto utiliza o [Cypress](https://www.cypress.io/) para automação de te
 
 1. Clone o repositório.
 2. Instale as dependências:
+   npm run cy:open:chrome
 
 ```sh
 npm install
+```
+
+## Para testes específicos no navegador Chrome
+
+```sh
+npm run cy:open:chrome
+```
+
+```sh
+npm run cy:run:chrome
 ```
