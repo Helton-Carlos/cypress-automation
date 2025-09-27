@@ -1,0 +1,11 @@
+{
+  "admin": {
+    "name": "helton",
+    "email": "helton@gmail.com",
+    "password": "helton"
+  },
+  "client": {
+    "email": "res@gmail.com",
+    "password": "abcdef"
+  }
+}
