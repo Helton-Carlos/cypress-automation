@@ -4,8 +4,9 @@
     "email": "helton@gmail.com",
     "password": "helton"
   },
-  "client": {
-    "email": "res@gmail.com",
-    "password": "abcdef"
+  "adminerror": {
+    "name": "error",
+    "email": "error@error",
+    "password": "1"
   }
 }
