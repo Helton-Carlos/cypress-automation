@@ -5,6 +5,10 @@ describe('Page cadastrarusuarios', () => {
     cy.visit('https://front.serverest.dev/cadastrarusuarios');
   });
 
+  it('URL cadastrarusuarios', function () {
+    cy.url().should('include', '/cadastrarusuarios');
+  });
+
   it('register with error', function () {
     cy.get('[data-testid="nome"]').type(this.usuarios.adminerror.name);
     cy.get('[data-testid="email"]').type(this.usuarios.adminerror.email);
