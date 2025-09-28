@@ -10,6 +10,10 @@ describe('Page home', () => {
     });
   });
 
+  it('URL home', function () {
+    cy.url().should('include', '/home');
+  });
+
   it('Should test search error', function () {
     cy.get('[data-testid="pesquisar"]').type('camisa');
     cy.get('[data-testid="botaoPesquisar"]').click();
