@@ -6,8 +6,8 @@ describe('Page login', () => {
   });
 
   it('login with error', function () {
-    cy.get('[data-testid="email"]').type(this.usuarios.client.email);
-    cy.get('[data-testid="senha"]').type(this.usuarios.client.password);
+    cy.get('[data-testid="email"]').type(this.usuarios.adminerror.email);
+    cy.get('[data-testid="senha"]').type(this.usuarios.adminerror.password);
 
     cy.get('[data-testid="entrar"]').click();
 
